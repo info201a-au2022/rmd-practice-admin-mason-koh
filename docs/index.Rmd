@@ -1,7 +1,7 @@
 ---
-title: "Example Covid Report"
-author: "INFO-201: Class Demo"
-date: "2/7/2022"
+title: "X10: R Markdown Practice"
+author: "Mason Koh"
+date: "11/7/2022"
 output: html_document
 ---
 
@@ -11,12 +11,15 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Covid Report
-I write a paragraph here. I will highlight that the total number of US cases is `r get_total_cases()`. And, the total number of US deaths is `r get_total_deaths()`. 
+Based off the data analysis, the total number of COVID cases in the US is `r get_total_cases()`. The total number of US deaths is `r get_total_deaths()`. As
+we can see in the chart below, the number of cases has steadily increased over
+the time period. The highest rate of increase was at the beginning of 2022.
 
-(**Note**: Why are there no commas in the *total number of US deaths* ? Can you change `analysis.R` file so that the number is commented with commas?)
+This is a chart that shows the cumulative number of COVID cases in the US over
+the last 3ish years:
 
-I also want to show the chart:
-``` {r echo=FALSE}
+```{r echo=FALSE}
 cases_plot
 ```
 
+<https://github.com/info201a-au2022/rmd-practice-admin-mason-koh>

@@ -14,14 +14,14 @@ get_total_cases <- function() {
   return(prettyNum(total_cases,big.mark=",",scientific=FALSE))
 }
 
-?prettyNum()
+#?prettyNum()
 
 # This function returns the total number of cases in the US
 get_total_deaths <- function() {
   total_deaths <- national %>%
     filter(deaths == max(deaths)) %>%
     pull(deaths)
-  return(total_deaths)
+  return(prettyNum(total_deaths,big.mark=",",scientific=FALSE))
 }
 
 # Run the following code to create a plot of cumulative cases over time
